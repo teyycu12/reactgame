@@ -1,0 +1,110 @@
+/* 設定頁面全局的樣式 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #3e2723; /* 深咖啡色背景 */
+  color: #fff7e6; /* 米白色文字 */
+  display: flex;
+  flex-direction: column; /* 垂直排列 */
+  align-items: center; /* 水平置中 */
+  min-height: 100vh; /* 讓頁面至少佔滿視窗高度 */
+  overflow-y: auto; /* 允許垂直滾動 */
+  padding: 20px;
+}
+
+/* 各部分的基本樣式 */
+.section {
+  text-align: center;
+  margin-bottom: 10px;
+  width: 100%;
+  max-width: 600px;
+}
+
+/* 主標題和副標題樣式 */
+.title-section h1 {
+  font-size: 2.5rem;
+  color: #fff7e6; /* 米白色文字 */
+  margin-bottom: 10px;
+}
+
+.title-section h2 {
+  font-size: 1.5rem;
+  color: #fff7e6; /* 米白色文字 */
+  margin-bottom: 20px;
+}
+
+/* 顯示範圍樣式 */
+.range-section p {
+  font-size: 1.2rem;
+  color: #fff7e6; /* 米白色文字 */
+}
+
+/* 輸入框樣式，放大處理 */
+.input-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-section .input {
+  padding: 15px;
+  width: 150px;
+  font-size: 1.5rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #f1e3c6;
+  border-radius: 5px;
+  background-color: #fff7e6;
+  color: #4b3832;
+}
+
+/* 按鈕樣式 */
+.button {
+  background-color: #6f4e37;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.button:hover {
+  background-color: #5a3e2b;
+}
+
+/* 猜測紀錄樣式 */
+.history-section {
+  margin-top: 20px;
+  max-width: 600px;
+  width: 100%;
+}
+
+.history-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #fff7e6;
+}
+
+.guess-history {
+  list-style: none;
+  padding: 0;
+  max-height: 400px; /* 設置容器最大高度 */
+  overflow-y: auto; /* 當記錄超過高度時啟用滾動 */
+  background-color: #4b3832; /* 深色背景 */
+  border-radius: 5px;
+}
+
+.guess-history li {
+  font-size: 1.2rem;
+  padding: 5px 0;
+  color: #fff7e6;
+  text-align: left;
+  padding-left: 10px;
+}
